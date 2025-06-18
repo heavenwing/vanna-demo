@@ -1,0 +1,13 @@
+services:
+  vanna-demo:
+    image: vanna-demo
+    container_name: vanna-demo
+    env_file:
+      - ~/.env
+    ports:
+      - "8084:8084"
+    volumes:
+      - data:/data
+
+volumes:
+  data:
