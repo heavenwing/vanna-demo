@@ -1,2 +1,7 @@
 *.sqlite3
+<<<<<<< HEAD
 __pycache__/
+=======
+__pycache__/cache.cpython-312.pyc
+__pycache__/my_vanna.cpython-312.pyc
+>>>>>>> 33bfeac (support api (frontend-backend))
