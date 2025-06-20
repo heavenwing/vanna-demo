@@ -11,11 +11,19 @@ RUN apt-get update && apt-get install -y \
 # Set the working directory in the container
 WORKDIR /app
 
+# <approach 1>
 # Copy the requirements file into the container
 COPY requirements.txt .
 
 # Install the dependencies
 RUN pip install --no-cache-dir -r requirements.txt
+# </approach 1>
+
+# <approach 2>
+# RUN pip install --no-cache-dir flask
+# RUN pip install --no-cache-dir vanna[chromadb,openai]
+# RUN pip install --no-cache-dir databricks-sql-connector
+# </approach 2>
 
 COPY . .
 

@@ -1,2 +1,3 @@
 flask
 vanna[chromadb,openai]
+databricks-sql-connector
