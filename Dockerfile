@@ -29,7 +29,6 @@ COPY . .
 
 FROM base AS final
 
-# Expose the port FastAPI will run on
 EXPOSE 8084
 
-CMD ["python", "api.py"]
+CMD ["python", "app.py"]
